@@ -1,30 +1,30 @@
-import { useLocation, Link } from "react-router-dom";
 import {
-  Navbar,
-  Typography,
+  setOpenConfigurator,
+  setOpenSidenav,
+  useMaterialTailwindController,
+} from "@/context";
+import {
+  Bars3Icon,
+  BellIcon,
+  ClockIcon,
+  Cog6ToothIcon,
+  CreditCardIcon,
+  UserCircleIcon,
+} from "@heroicons/react/24/solid";
+import {
+  Avatar,
+  Breadcrumbs,
   Button,
   IconButton,
-  Breadcrumbs,
   Input,
   Menu,
   MenuHandler,
-  MenuList,
   MenuItem,
-  Avatar,
+  MenuList,
+  Navbar,
+  Typography,
 } from "@material-tailwind/react";
-import {
-  UserCircleIcon,
-  Cog6ToothIcon,
-  BellIcon,
-  ClockIcon,
-  CreditCardIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
-import {
-  useMaterialTailwindController,
-  setOpenConfigurator,
-  setOpenSidenav,
-} from "@/context";
+import { Link, useLocation } from "react-router-dom";
 
 export function DashboardNavbar() {
   const [controller, dispatch] = useMaterialTailwindController();
@@ -116,7 +116,7 @@ export function DashboardNavbar() {
             <MenuList className="w-max border-0">
               <MenuItem className="flex items-center gap-3">
                 <Avatar
-                  src="https://demos.creative-tim.com/material-dashboard/assets/img/team-2.jpg"
+                  src="https://demos.cssllc.co/material-dashboard/assets/img/team-2.jpg"
                   alt="item-1"
                   size="sm"
                   variant="circular"
@@ -140,7 +140,7 @@ export function DashboardNavbar() {
               </MenuItem>
               <MenuItem className="flex items-center gap-4">
                 <Avatar
-                  src="https://demos.creative-tim.com/material-dashboard/assets/img/small-logos/logo-spotify.svg"
+                  src="https://demos.cssllc.co/material-dashboard/assets/img/small-logos/logo-spotify.svg"
                   alt="item-1"
                   size="sm"
                   variant="circular"

@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
 import {
+  Button,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
-  Input,
+  CardHeader,
   Checkbox,
-  Button,
+  Input,
   Typography,
 } from "@material-tailwind/react";
+import { Link, useNavigate } from "react-router-dom";
 
 export function SignUp() {
+  const navigate = useNavigate();
   return (
     <>
       <img
@@ -38,7 +39,13 @@ export function SignUp() {
             </div>
           </CardBody>
           <CardFooter className="pt-0">
-            <Button variant="gradient" fullWidth>
+            <Button
+              variant="gradient"
+              fullWidth
+              onClick={() => {
+                navigate("/dashboard/home");
+              }}
+            >
               Sign Up
             </Button>
             <Typography variant="small" className="mt-6 flex justify-center">

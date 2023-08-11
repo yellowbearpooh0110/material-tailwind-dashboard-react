@@ -1,19 +1,19 @@
-import React from "react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import {
-  Button,
-  IconButton,
-  Switch,
-  Typography,
-  Chip,
-} from "@material-tailwind/react";
-import {
-  useMaterialTailwindController,
+  setFixedNavbar,
   setOpenConfigurator,
   setSidenavColor,
   setSidenavType,
-  setFixedNavbar,
+  useMaterialTailwindController,
 } from "@/context";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Button,
+  Chip,
+  IconButton,
+  Switch,
+  Typography,
+} from "@material-tailwind/react";
+import React from "react";
 
 function formatNumber(number, decPlaces) {
   decPlaces = Math.pow(10, decPlaces);
@@ -148,7 +148,7 @@ export function Configurator() {
           <hr />
           <div className="my-8 flex flex-col gap-4">
             <a
-              href="https://www.creative-tim.com/product/material-tailwind-dashboard-react?rel=mtdr"
+              href="https://www.cssllc.co/product/material-tailwind-dashboard-react?rel=mtdr"
               target="_black"
             >
               <Button variant="gradient" fullWidth>

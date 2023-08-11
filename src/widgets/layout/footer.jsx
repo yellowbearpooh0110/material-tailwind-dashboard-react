@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import { Typography } from "@material-tailwind/react";
 import { HeartIcon } from "@heroicons/react/24/solid";
+import { Typography } from "@material-tailwind/react";
+import PropTypes from "prop-types";
 
 export function Footer({ brandName, brandLink, routes }) {
   const year = new Date().getFullYear();
@@ -41,13 +41,13 @@ export function Footer({ brandName, brandLink, routes }) {
 }
 
 Footer.defaultProps = {
-  brandName: "Creative Tim",
-  brandLink: "https://www.creative-tim.com",
+  brandName: "Complete Strategic Solutions LLC",
+  brandLink: "https://www.cssllc.co",
   routes: [
-    { name: "Creative Tim", path: "https://www.creative-tim.com" },
-    { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-    { name: "Blog", path: "https://www.creative-tim.com/blog" },
-    { name: "License", path: "https://www.creative-tim.com/license" },
+    { name: "Complete Strategic Solutions LLC", path: "https://www.cssllc.co" },
+    { name: "About Us", path: "https://www.cssllc.co/presentation" },
+    { name: "Blog", path: "https://www.cssllc.co/blog" },
+    { name: "License", path: "https://www.cssllc.co/license" },
   ],
 };
 
